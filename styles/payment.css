@@ -1,6 +1,8 @@
 body{
     width: 100%;
     height: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
 }
 .wrapper{
     width: 100%;
@@ -17,4 +19,26 @@ body{
 .h1detail img{
     width: 500px;
     height: 500px;
+
+} 
+.header-container{
+    background-color: rosybrown;
+}
+.footer-content{
+    background-color: rosybrown;
+}
+.h1detail{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+.customerInformation{
+    margin: 2%;
+}
+.paymentDetail{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
 }

@@ -1,6 +1,8 @@
 body{
     width: 100%;
     height: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
 }
 .wrapper{
     width: 100%;
@@ -13,8 +15,28 @@ body{
 #raddisionDetail img{
     width: 500px;
     height: 500px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 #socialIcons a img{
     width: 22px;
     height: 20px;
+}
+.header-container{
+    background-color: rosybrown;
+}
+.footer-content{
+    background-color: rosybrown;
+}
+.bookingForm{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+}
+.hotelDescription{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
