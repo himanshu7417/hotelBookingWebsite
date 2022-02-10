@@ -12,8 +12,8 @@
         <!-- -------------header-------- -->
         <header>
             <div>
-                <img src="assests/images/logo.png" alt="log" width="150px" height="200px">
-                <a href="login.html" target="_blank">Login</a>
+                <a href="index.html"><img src="assests/images/logo.png" alt="log" width="150px" height="200px"></a>
+                <a href="login.html">Login</a>
             </div>
         </header>
         <!-- -------------header ends-------- -->
@@ -24,7 +24,24 @@
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
 
                 " alt="raddison"><br>
-                <a href="payment.html">Book Now</a>
+                <form action="payment.html" method="get">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="number" id="number" value="1" min="1"><br>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="" required><br>
+                    <label for="fdate">From Date:</label>
+                    <input type="date" name="fdate" id="" required><br>
+                    <label for="tdate">To Date:</label>
+                    <input type="date" name="tdate" id="" required><br>
+                    <label for="total">Total:</label>
+                    <input type="text" name="ttext" id="" disabled><br>
+                    <input type="submit" value="Book Now">
+
+
+
+                </form>
+                
+                
                 <h2>Radission Blu Hotel</h2>
                 <p>Rating</p>
                 <p>AMENTIES</p>
@@ -45,7 +62,7 @@
         <!-- -------------footer-------- -->
         <footer>
             <div>
-                <a href="contact.html" target="_blank">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
                 <div id="socialIcons">
                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" width="20px" height="22px"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" width="20px" height="22px"></a>
