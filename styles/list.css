@@ -1,0 +1,20 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.header-container img{
+    width: 60px;
+    height: 60px;
+}
+.limage{
+    width: 150px;
+    height: 150px;
+}
+#socialIcons a img{
+    width: 22px;
+    height: 20px;
+}
