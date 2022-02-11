@@ -11,23 +11,27 @@
 
 <body>
     <!-- ---------wrapper main div---------------- -->
-    <div class="wrapper">
+    
         <!-- -------------header-------- -->
         <header>
             <div class="header-container">
-                <a href="index.html"><img src="assests/images/logo.png" alt="log" width="150px" height="200px"></a>
-                <a href="login.html" target="_blank">Login</a>
+                <img src="assests/images/logo.png" alt="log">
+                <div class="logo">
+                    <a href="login.html" target="_blank">Login</a>
+                </div>
             </div>
         </header>
         <!-- -------------header ends-------- -->
 
         <!-- -------------content-------------- -->
-        <div>
+        <div id="content">
+            <div class="lm">
             <ul>
                 <li><a href="#list">List View</a></li>
                 <li><a href="#map">Map View</a></li>
             </ul>
-            <div id="list">
+            </div>
+            <div id="flex-container">
                 <div id="hotel1">
 
                     <a href="detail.html"><img
@@ -46,14 +50,15 @@
                     <p>4.5 Star</p>
                     <p>New Delhi</p>
                 </div>
-
+            </div>
+            <div id="flex2">
                 <div id="hotel3">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj"
                         class="limage">
                     <h3>Taj Palace</h3>
                     <p>4.0 Star</p>
                     <p>New Delhi</p>
-                </div>
+                </div> 
             </div>
             <div id="map">
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
@@ -67,20 +72,17 @@
         <!-- -------------footer-------- -->
         <footer>
             <div class="footer-content">
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html" target="_blank">Contact Us</a>
                 <div id="socialIcons">
-                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"
-                            alt="facebook" width="20px" height="22px"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/twitter.png"
-                            alt="twitter" width="20px" height="22px"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="assests/images/instagram.png"
-                            alt="instagram" width="20px" height="22px"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" width="20px" height="22px"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" width="20px" height="22px"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"width="20px" height="22px"></a>
                 </div>
-                &copy; 2020 ROOM SEARCH PVT. LTD.
+                <div class="txt">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
             </div>
         </footer>
         <!-- -------------footer ends-------- -->
-    </div>
+    
 </body>
 
 </html>
