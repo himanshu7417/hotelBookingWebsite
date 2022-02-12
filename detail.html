@@ -15,7 +15,9 @@
         <!-- -------------header-------- -->
         <header>
             <div class="header-container">
-                <img src="assests/images/logo.png" alt="log">
+                <div class="logs">
+                <img src="assests/images/logo.png" alt="log" width="150px" height="200px">
+            </div>
                 <div class="logo">
                     <a href="login.html" target="_blank">Login</a>
                 </div>
@@ -25,58 +27,75 @@
 
         <!-- -------------content-------------- -->
         <div id="content">
-            <div id="raddisionDetail">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
 
+            <div class="flex-detail">
+                <div class="dimage">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
+ 
                 " alt="raddison"><br>
-                <form action="payment.html" method="get" class="bookingForm">
-                    <label for="adults">Adults:</label>
-                    <input type="number" name="number" id="number" value="1" min="1"><br>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="" required><br>
-                    <label for="fdate">From Date:</label>
-                    <input type="date" name="fdate" id="" required><br>
-                    <label for="tdate">To Date:</label>
-                    <input type="date" name="tdate" id="" required><br>
-                    <label for="total">Total:</label>
-                    <input type="text" name="ttext" id="" disabled><br>
-                    <input type="submit" value="Book Now">
-
-
-
-                </form> 
-
-                <div class="hotelDescription">
-                    <h2>Radission Blu Hotel</h2>
-                    <p>Rating</p>
-                    <p>AMENTIES</p>
-                    <ol>
-                        <li>Room Service</li>
-                        <li>Restraunt</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ol>
-                    <h5>DESCRIPTION</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore non, libero atque quam ducimus
-                        quos sit dolore aspernatur a! Minima, error cumque. Nobis similique nesciunt maxime ut commodi,
-                        accusamus recusandae.</p>
                 </div>
+                
+
+                    <form action="payment.html" method="get" class="bookingForm">
+                        <div class="inputs">
+                            <label for="adults">Adults:</label>
+                            <input type="number" name="adults" id="" min="1" required>
+                          </div>
+                          <div class="inputs">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="" required>
+                          </div>
+                          <div class="inputs">
+                            <label for="fromDate">From Date:</label>
+                            <input type="date" name="fromDate" id="" required>
+                          </div>
+                          <div class="inputs">
+                            <label for="toDate">To Date:</label>
+                            <input type="date" name="toDate" id="" required>
+                          </div>
+                          <div class="inputs">
+                            <label for="total">Total:</label>
+                            <input type="text" name="" id="" readonly>
+                          </div>
+                          <div id="submitButton">
+                            <button type="submit" class="btn btn-outline-success">Book Now</button>
+                          </div>
+                    </form>
+                
             </div>
+
+            <div class="hotelDescription">
+                <h2>Radission Blu Hotel</h2>
+                <p style="font-family: cursive;">Rating</p>
+                <p style="font-family: cursive;">AMENITIES</p>
+                <ol>
+                    <li>Room Service</li>
+                    <li>Restraunt</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ol>
+                <h5 style="font-family: cursive;">DESCRIPTION</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore non, libero atque quam ducimus
+                    quos sit dolore aspernatur a! Minima, error cumque. Nobis similique nesciunt maxime ut commodi,
+                    accusamus recusandae.</p>
+            </div>
+
         </div>
         <!-- -------------content ends-------------- -->
 
         <!-- -------------footer-------- -->
         <footer>
             <div class="footer-content">
-                <a href="contact.html" target="_blank">Contact Us</a>
+                <div class="contact"><a href="contact.html" target="_blank">Contact Us</a></div>
+                <div class="txt">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
                 <div id="socialIcons">
                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" width="20px" height="22px"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" width="20px" height="22px"></a>
                     <a href="https://twitter.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"width="20px" height="22px"></a>
                 </div>
-                <div class="txt">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-            </div>
+                
+            </div> 
         </footer>
         <!-- -------------footer ends-------- -->
     </div>
