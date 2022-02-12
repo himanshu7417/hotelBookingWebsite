@@ -7,4 +7,14 @@
     border: 12px solid #f3f3f3;
     border-top: 12px solid #444444;
     margin-top: 20%;
+    animation: rotateAnimation 0.7s  infinite;
+} 
+
+@keyframes rotateAnimation {
+10% { transform: rotate(60deg);}
+20% {transform: rotate(120deg);}
+40% {transform: rotate(180deg);}
+60% {transform: rotate(240deg);}
+80% {transform: rotate(300deg);}
+100% {transform: rotate(360deg);}
 }

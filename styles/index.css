@@ -121,10 +121,10 @@ body a{
 }
 .cityImages{
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 15%; 
 
 }
-.footer-content{
+.footer-content{ 
     background-color: rosybrown;
     width: 100%;
     bottom: 0;
@@ -136,8 +136,8 @@ body a{
     
 }
 .logo{
-    margin-top: 1.5%;
-    margin-right:1.5%;
+    margin-top: 1%;
+    margin-right:1%;
 
 }
 .logs{
@@ -156,6 +156,7 @@ body a{
 .view{
     width: 100%;
     text-align: center;
+    margin-bottom: 2%;
 }
 .banner-image input{
     margin-left: 36%;
@@ -169,6 +170,4 @@ body a{
     border: 1px transparent;
     outline: none;
 }
-.contact{
-    margin-left: 1%;
-}
+
