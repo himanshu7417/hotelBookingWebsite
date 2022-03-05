@@ -18,69 +18,7 @@
     <!-- ---------wrapper main div---------------- -->
     <div class="wrapper">
         <!-- -------------header-------- -->
-        <header>
-            <div class="header-container">
-                <div class="logs">
-                    <img src="assests/images/logo.png" alt="log" width="150px" height="200px">
-                </div>
-                <div class="logo">
-                    <button class="btn btn-sm btn-light" data-toggle="modal" data-target="#login-modal" type="button">
-                        Login
-                    </button>
-                </div>
-            </div>
-       
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body ">
-                        <div style="margin: 4% 0;" class="d-flex justify-content-around">
-                            <label for="username">Username:</label>
-                            <input type="text" placeholder="Enter Username" name="username" id="username">
-                        </div>
-                        <div style="margin: 4% 0;" class="d-flex justify-content-around">
-                            <label for="password">Password:</label>
-                            <input type="password" placeholder="Enter Password" name="password" id="password">
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary">Login</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body ">
-                        <p>Thank you for reaching out!!! <br> please enter your email and we will get back to you.</p>
-                        <div class="d-flex align-self-start align-items-baseline">
-                            <label for="email">Email:</label>
-                            <input type="email" placeholder="Enter your email id" name="email" id="email">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <header id="header"></header>
         <!-- -------------header ends-------- -->
 
         <!-- -------------content-------------- -->
@@ -121,30 +59,31 @@
                     <form action="payment.html" method="get" class="bookingForm">
                         <div class="inputs">
                             <label for="adults">Adults:</label>
-                            <input type="number" name="adults" id="" min="1" required>
+                            <input type="number" name="adults" id="NoAdults" min="1" oninput="priceUpdate()" required>
                           </div>
                           <div class="inputs">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="" required>
+                            <input type="text" name="name" id="name" required>
                           </div>
                           <div class="inputs">
                             <label for="fromDate">From Date:</label>
-                            <input type="date" name="fromDate" id="" required>
+                            <input type="date" name="fromDate" id="fromDate" required oninput="priceUpdate()">
                           </div>
                           <div class="inputs">
                             <label for="toDate">To Date:</label>
-                            <input type="date" name="toDate" id="" required>
+                            <input type="date" name="toDate" id="toDate" required oninput="priceUpdate()">
                           </div>
                           <div class="inputs">
                             <label for="total">Total:</label>
-                            <input type="text" name="" id="" readonly>
+                            <input type="text" name="" id="price" readonly>
+                            
                           </div>
                           <div id="submitButton">
                             <button type="submit" class="btn btn-outline-success">Book Now</button>
                           </div>
                     </form>
                 
-            </div>
+            </div> 
 
             <div class="hotelDescription">
                 <h2>Radission Blu Hotel</h2>
@@ -174,21 +113,12 @@
         <!-- -------------content ends-------------- -->
 
         <!-- -------------footer-------- -->
-        <footer>
-            <div class="footer-content">
-                <div class="contact"><button data-toggle="modal" data-target="#contact-modal" class="btn btn-info">
-                    <span id="contactBtn" style="color: #000;">Contact Us</span></div>
-                <div class="txt">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-                <div id="socialIcons">
-                    <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" width="20px" height="22px"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" width="20px" height="22px"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram"width="20px" height="22px"></a>
-                </div>
-                
-            </div> 
+        <footer id="footer">
+            
         </footer>
         <!-- -------------footer ends-------- -->
     </div>
 </body>
-
+<script src="scripts/common.js"></script>
+<script src="scripts/detail.js"></script>
 </html>
