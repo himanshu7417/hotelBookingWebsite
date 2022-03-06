@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/common.css">
+    
     <script src="https://kit.fontawesome.com/be61e954f2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
 
 <body>
     <!-- ---------wrapper main div---------------- -->
-
+    
     <!-- -------------header-------- -->
     <header id="header"></header>
 
@@ -26,7 +27,7 @@
 
     <!-- -------------content-------------- -->
     <div id=content>
-
+      <div id="loader"></div>
         <div id="container">
           <input type="radio" class="btn-check" name="btnradio" id="list-view-button" autocomplete="off" checked>
           <label class="btn btn-outline-primary" for="list-view-button">List View</label>
@@ -45,15 +46,14 @@
 
           </div> 
           <div id="mapView">
-            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image">
-          </div>
+             <div id="map"></div>
+      
+          
+        </div>
+        
         </div>
       </div>
-    <div id="map">
-        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
-        <p>MAP VIEW</p>
-
-    </div>
+    
 
     </div>
     <!-- --------------content ends-------------- -->
@@ -65,6 +65,8 @@
     <!-- -------------footer ends-------- -->
 <script src="scripts/common.js"></script>
 <script src="scripts/list.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzxBOJWZnj7YX_rw5i4_SMqvrryIdUK9M"></script>
 </body>
 
 </html>

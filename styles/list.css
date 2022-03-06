@@ -291,4 +291,12 @@ body a{
 
 #rating{
   float: left;
+  
+}
+#map {
+ display: flex;
+  height: 400px;
+  width: 100%;
+  margin-top: 2%;
+
 }

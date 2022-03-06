@@ -4,14 +4,12 @@ const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
 const travelAdvisorKey = "d34673b15fmsh628a2f42dfde0fap1594f8jsn3abac0586f15";
 const PRICE_PER_ROOM = 1000;
 
-let idElement = document.getElementById("id");
-idElement.value = urlParams.get('id');
 
 
 /* Function to update the Price*/
 let priceUpdate = () => {
-    let adultElement = document.getElementById("adult"); 
     
+    let adultElement = document.getElementById("adult"); 
     let totalPriceElement = document.getElementById("price");
     let toDateElement = document.getElementById("toDate");
     let fromDateElement = document.getElementById("fromDate");
@@ -43,7 +41,7 @@ let fetchHotelPhotosAPI = () => {
             for (; i < size; i++) {
                 let div = document.createElement("div");
                 div.classList.add("carousel-item");
-                if (i == 0)
+                if (i == 0) 
                     div.classList.add("active");
                 let image = document.createElement("img");
                 image.setAttribute("class", "carousel-image");
@@ -53,7 +51,7 @@ let fetchHotelPhotosAPI = () => {
                 div.appendChild(image);
                 carouselParentElement.appendChild(div);
             }
-            
+            disableLoader();
         }
     });
     xhr.open("GET", API_URL + "photos/list?lang=en_US&location_id=" + urlParams.get('id'));
@@ -101,6 +99,7 @@ let fetchHotelDetailAPI = () => {
 
     xhr.send();
 }
-
+let idElement = document.getElementById("id");
+idElement.value = urlParams.get('id');
 fetchHotelDetailAPI();
 fetchHotelPhotosAPI();

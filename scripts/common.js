@@ -1,4 +1,12 @@
-//header template 
+let disableLoader = () => {
+  document.getElementById("loader").style.visibility = "hidden";
+  document.getElementsByTagName("body")[0].style.visibility = "visible";
+} 
+
+let displayLoader = () => {
+  document.getElementsByTagName("body")[0].style.visibility = "hidden";
+  document.getElementById("loader").style.visibility = "visible";
+}
 
     let headerTemplate = `
     <div class="header-container">
@@ -86,6 +94,9 @@ document.getElementById('footer').innerHTML += footerTemplate;
 
 // set login feature 
 
+displayLoader();
+
+
 let mainLogin = e => {
     if (localStorage.getItem('isLogin') === 'true') {
         localStorage.setItem('isLogin', 'false');
@@ -138,16 +149,4 @@ let checkLogin = () => {
 }
 
 checkLogin();
-
-
-
-
-
-
-
-
-
-
-
-
 

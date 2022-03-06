@@ -2,107 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/be61e954f2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles/detail.css">
-    <link rel="stylesheet" href="styles/common.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/be61e954f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/detail.css">
+  <link rel="stylesheet" href="styles/common.css">
 </head>
 
 <body>
-    <!-- ---------wrapper main div---------------- -->
-    <div class="wrapper">
-        <!-- -------------header-------- -->
-        <header id="header"></header>
-        <!-- -------------header ends-------- -->
+  <!-- ---------wrapper main div---------------- -->
+  <div id="loader"></div>
+  <div class="wrapper">
+    <!-- -------------header-------- -->
+    <header id="header"></header>
+    <!-- -------------header ends-------- -->
 
-        <!-- -------------content-------------- -->
-        <div id="content">
+    <!-- -------------content-------------- -->
+    <div id="content">
 
-            <div class="flex-detail">
-                <div class="dimage">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carousel-parent">               
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    
-                  </div>
-
-             
-                </div>
-               
-              
-                
-
-                    <form action="payment.html" method="get" class="bookingForm">
-                        <div class="inputs">
-                            <label for="adults">Adults:</label>
-                            <input type="number" name="adults" id="adult" min="1"  oninput="priceUpdate()" required>
-                          </div>
-                          <div class="inputs">
-                            <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" required>
-                          </div>
-                          <div class="inputs"> 
-                            <label for="fromDate">From Date:</label>
-                            <input type="date" name="fromDate" id="fromDate" required oninput="priceUpdate()">
-                          </div>
-                          <div class="inputs">
-                            <label for="toDate">To Date:</label>
-                            <input type="date" name="toDate" id="toDate" required oninput="priceUpdate()">
-                          </div>
-                          <div class="inputs">
-                            <label for="total">Total:</label>
-                            <input type="text" name="" id="price" readonly>
-                            <input class="inner" type="hidden" id="id" name="id">
-                            
-                          </div>
-                          <div id="submitButton">
-                            <button type="submit" class="btn btn-outline-success">Book Now</button>
-                          </div>
-                    </form>
-                 
-            </div> 
-
-            <div class="hotelDescription">
-              
-                <h2 id="hotel-name"></h2>
-                <h5 class="heading">RATING</h5>
-                <div id="rating">
-                    <span class="fa fa-star checked" id="1"></span>
-                    <span class="fa fa-star checked" id="2"></span>
-                    <span class="fa fa-star checked" id="3"></span>
-                    <span class="fa fa-star checked" id="4"></span>
-                    <span class="fa fa-star checked" id="5"></span>
-                </div>
-                <h5 class="heading">AMENITIES</h5>
-                <ul id="amenities"></ul>
-                <h5 class="heading" id="description">DESCRIPTION</h5>
-            
+      <div class="flex-detail">
+        <div class="dimage">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="carousel-parent">
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+
 
         </div>
-        <!-- -------------content ends-------------- -->
 
-        <!-- -------------footer-------- -->
-        <footer id="footer">
-            
-        </footer>
-        <!-- -------------footer ends-------- -->
+
+
+
+        <form action="payment.html" method="get" class="bookingForm">
+          <div class="inputs">
+            <label for="adults">Adults:</label>
+            <input type="number" name="adults" id="adult" min="1" oninput="priceUpdate()" required>
+          </div>
+          <div class="inputs">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="inputs">
+            <label for="fromDate">From Date:</label>
+            <input type="date" name="fromDate" id="fromDate" required oninput="priceUpdate()">
+          </div>
+          <div class="inputs">
+            <label for="toDate">To Date:</label>
+            <input type="date" name="toDate" id="toDate" required oninput="priceUpdate()">
+          </div>
+          <div class="inputs">
+            <label for="price">Total:</label>
+            <input class="inner" type="text" name="price" id="price" readonly oninput="priceUpdate()" />
+            <input class="inner" type="hidden" id="id" name="id">
+
+          </div>
+          <div id="submitButton">
+            <button type="submit" class="btn btn-outline-success">Book Now</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="hotelDescription">
+
+        <h2 id="hotel-name"></h2>
+        <h5 class="heading">RATING</h5>
+        <div id="rating">
+          <span class="fa fa-star checked" id="1"></span>
+          <span class="fa fa-star checked" id="2"></span>
+          <span class="fa fa-star checked" id="3"></span>
+          <span class="fa fa-star checked" id="4"></span>
+          <span class="fa fa-star checked" id="5"></span>
+        </div>
+        <h5 class="heading">AMENITIES</h5>
+        <ul id="amenities"></ul>
+        <h5 class="heading" id="description">DESCRIPTION</h5>
+
+      </div>
+
     </div>
+    <!-- -------------content ends-------------- -->
+
+    <!-- -------------footer-------- -->
+    <footer id="footer">
+
+    </footer>
+    <!-- -------------footer ends-------- -->
+  </div>
 </body>
 <script src="scripts/common.js"></script>
 <script src="scripts/detail.js"></script>
+
 </html>
